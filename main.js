@@ -36,7 +36,7 @@ for (let key in drumMap) {
   const shortcut = document.createElement("kbd");
   shortcut.textContent = drumMap[key]; //generere --> drumap.kick, vil generere en shortcut til knappene.
   shortcut.style.fontSize = "2rem";
-  //Eventlistener
+  //Eventlistener comit
   image.addEventListener("click", () => {
     new Audio(`./sounds/${key}.wav`).play();
   });
